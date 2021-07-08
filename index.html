@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Tip</title>
+</head>
+<body>
+    <div class='container'>
+        <h1>Tip Calculator</h1>
+        <div class='bill'>
+        <label>How much was your bill?<br>
+        <input type='text' class='amount' placeholder='$Bill Amount' required>
+        </label>
+
+        <label>How was your service?<br>
+            <select name="service" class='service' required>
+                <option value='' disabled selected>Select your option</option>
+                <option class='bad' value="Bad(10%)">Bad(10%)</option>
+                <option class='average' value="Average(12%)">Average(12%)</option>
+                <option class='good' value="Good(15%)">Good(15%)</option>
+              </select>
+        </label>
+
+        <label>How many people splitting?<br>
+        <input type='text' class='people' placeholder='Number of people' required>
+        </label>
+
+        <button class='calculate' type='button'>Calculate</button>
+        </div>
+    </div>
+
+    <div class='container2'>
+        <i id='exit' class="fas fa-times"></i>
+        <h3 class='tipresult'></h3>
+    </div>
+    
+    <script src='app.js'></script>
+</body>
+</html>
